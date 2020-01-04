@@ -47,8 +47,6 @@ window.onload = function () {
         }
     }
     random();
-    console.log(arry)//
-
 
     function click() {
         console.log('aa', this, this.getAttribute('x'))
@@ -75,8 +73,6 @@ window.onload = function () {
             if (arry[index] == 0) {
                 zeroP = index
             }
-            console.log(value)
-            console.log(y, map.children[frist].children[y])
             map.children[frist].children[y].addEventListener('click', click, false)
             map.children[frist].children[y].setAttribute('i', index)
             map.children[frist].children[y].setAttribute('x', value)
@@ -112,7 +108,6 @@ window.onload = function () {
     document.getElementById('bt_OK').addEventListener('click', onok, false)
     function onok() {
         var end = true;
-        console.log(arry)
         if (!repaly) {
             for (var index = 0; index < 9; index++) {
                 if (index == 8) {
